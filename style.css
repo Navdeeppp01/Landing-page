@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.hero {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 60px 20px 40px;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.floating-img {
+  width: 100%;
+  max-width: 600px;
+  animation: floatY 3s ease-in-out infinite;
+  margin-bottom: 30px;
+}
+
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.cta-button {
+  background: #666;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #444;
+}
+
+.features {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.features h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.feature {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #666;
+  color: white;
+}
+
+.cta h2 {
+  font-weight: 600;
+}
+
+
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .floating-img {
+    max-width: 90%;
+  }
+}
